@@ -1,0 +1,14 @@
+{
+  "name": "minha-aplicacao",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "http-server -p 8081",
+    "test": "echo 'teste'"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "http-server": "^0.11.1"
+  }
+}
