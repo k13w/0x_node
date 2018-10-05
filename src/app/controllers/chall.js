@@ -12,19 +12,18 @@ router.post('/new_chall', async (req, res) => {
 
         return res.send({ task });
     } catch (err) {
-        console.log(err);
-        return res.status(400).send({ error: 'Erro ao adicionar nova challenge!' })
+        return res.status(400).send({ error: 'Erro ao adicionar nova challenge!' });
     }
-})
+});
 
 router.post('/list_chall', async (req, res) => {
     try {
-        const list_chall = await Tasks.find();
+        const listing = await Tasks.find();
 
-        return res.send({ list_chall });
+        return res.send({ listing });
     } catch (err) {
         return res.status(400).send({ error: 'invalid token para listar!' });
     }
-})
+});
 
-module.exports = app => app.use('/challenges', router);
+module.exports = app => app.use('/dashboard', router);

@@ -1,27 +1,26 @@
 <DOCTYPE htmL>
-<html lang="pt-br">
+    <html lang="pt-br">
     <head>
         <title>Test</title>
         <meta charset="utf-8">
-
-        <body>
-            <form id="login" name="login">
-                <label for="name">
-                    <input type="name" name="name" id="name" placeholder="Please, insert your name" class="name">                    
-                </label>
-                <label for="email">
-                    <input type="email" name="email" id="email" placeholder="Please, insert your e-mail" class="email">
-                </label>
-                <label for="password">
-                    <input type="password" name="password" id="password" placeholder="Please, insert your password" class="password">
-                </label>
-                <button type="button" class="login">
-                    ENVIAR
-                </button>
-            </form>
-
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-            <script src="js/index.js"></script>
-        </body>
+        <link rel="stylesheet" href="static/css/index.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     </head>
-</html>
+    
+    <body class="text-center">
+        <div class="col-md-3">
+        <form id="login" name="login" class="form-signin">
+            <label for="email"></label>
+            <input type="email" name="email" id="email" placeholder="Please, insert your e-mail" class="form-control">
+            <label for="password"></label>
+            <input type="password" name="password" id="password" placeholder="Please, insert your password" class="form-control">
+            <br><button type="button" id="login" class="btn btn-primary btn-bloc">Sing up</button>
+        </form>
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <script src="static/js/index.js"></script>
+    </body>
+    </html>

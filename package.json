@@ -18,6 +18,7 @@
     "mongoose": "^5.2.15",
     "nodemailer": "^4.6.8",
     "nodemailer-express-handlebars": "^3.0.0",
-    "path": "^0.12.7"
+    "path": "^0.12.7",
+    "vue": "^2.5.17"
   }
 }
